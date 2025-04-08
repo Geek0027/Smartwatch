@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best smart watches on Amazon India - compare prices, reviews and features to get the perfect deal">
+    <meta name="keywords" content="Amazon India smart watches, best smart watches, smart watch deals, fitness tracker comparison">
+    <title>SmartWatch Scout | Best Amazon India Smart Watch Deals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #37475A;
+            --secondary: #232F3E;
+            --accent: #FF9900;
+            --accent-dark: #e68a00;
+            --light: #F2F3F4;
+            --dark: #131A22;
+            --success: #00A650;
+            --danger: #FF4D4D;
+            --text: #333;
+            --text-light: #555;
+            --bg: #f9f9f9;
+            --card-bg: #fff;
+            --header-bg: linear-gradient(135deg, #37475A, #232F3E);
+            --footer-bg: #131A22;
+            --filter-bg: #fff;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .dark-mode {
+            --primary: #56687E;
+            --secondary: #3A4B5C;
+            --accent: #FFB347;
+            --light: #2D3748;
+            --dark: #E2E8F0;
+            --text: #E2E8F0;
+            --text-light: #CBD5E0;
+            --bg: #1A202C;
+            --card-bg: #2D3748;
+            --header-bg: linear-gradient(135deg, #2D3748, #1A202C);
+            --footer-bg: #1A202C;
+            --filter-bg: #2D3748;
+            --shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            transition: var(--transition);
+        }
+        
+        header {
+            background: var(--header-bg);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: var(--transition);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            color: var(--accent);
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .theme-toggle {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .theme-toggle:hover {
+            background: rgba(255,255,255,0.2);
+            transform: rotate(30deg);
+        }
+        
+        .search-container {
+            display: flex;
+            margin: 2rem 0;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .dark-mode .search-container {
+            border-color: rgba(255,255,255,0.1);
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            font-size: 1rem;
+            outline: none;
+            background: transparent;
+            color: var(--text);
+        }
+        
+        .search-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .search-btn:hover {
+            background-color: var(--accent-dark);
+        }
+        
+        .filters-section {
+            background: var(--filter-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .filters-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .filters-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .reset-filters {
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .filter-label {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .filter-select {
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(0,0,0,0.1);
+            background-color: var(--card-bg);
+            color: var(--text);
+            font-family: 'Montserrat', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .dark-mode .filter-select {
+            border-color: rgba(255,255,255,0.1);
+        }
+        
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(255,153,0,0.2);
+        }
+        
+        .price-slider-container {
+            padding: 10px 0;
+        }
+        
+        .price-slider {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: #ddd;
+            outline: none;
+            -webkit-appearance: none;
+            margin: 10px 0;
+        }
+        
+        .dark-mode .price-slider {
+            background: #4A5568;
+        }
+        
+        .price-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .price-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+        
+        .price-range-values {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .results-stats {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        .view-toggle {
+            display: flex;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .view-btn {
+            padding: 8px 12px;
+            border: none;
+            background: transparent;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .view-btn.active {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            transform: translateY(0);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .dark-mode .product-card:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background-color: var(--success);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .product-badge.out-of-stock {
+            background-color: var(--danger);
+        }
+        
+        .score-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: var(--secondary);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .product-image-container {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .product-image {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+        
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+        
+        .product-wishlist {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0,0,0,0.5);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2;
+            border: none;
+        }
+        
+        .product-wishlist:hover {
+            background: rgba(0,0,0,0.7);
+        }
+        
+        .product-wishlist.active {
+            color: var(--danger);
+            background: white;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-title {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 3em;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .product-card:hover .product-title {
+            color: var(--accent);
+        }
+        
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .current-price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        
+        .original-price {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+        }
+        
+        .discount-badge {
+            background-color: var(--accent);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 0.75rem;
+        }
+        
+        .stars {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+        
+        .rating-count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        
+        .product-seller {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .seller-badge {
+            background: rgba(0,166,80,0.1);
+            color: var(--success);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        
+        .product-features {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        
+        .product-features ul {
+            padding-left: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        
+        .product-features li {
+            margin-bottom: 0.3rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            position: relative;
+            padding-left: 12px;
+        }
+        
+        .product-features li:before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            gap: 10px;
+        }
+        
+        .view-btn, .buy-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .view-btn {
+            background-color: rgba(0,0,0,0.05);
+            color: var(--text);
+        }
+        
+        .dark-mode .view-btn {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .buy-btn {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .view-btn:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+        .dark-mode .view-btn:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .buy-btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* List view styles */
+        .product-item {
+            display: flex;
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .product-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .product-item-image {
+            width: 200px;
+            height: 200px;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .product-item-image img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+        }
+        
+        .product-item-details {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-item-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .product-item-info {
+            flex: 1;
+        }
+        
+        .product-item-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .product-item-features {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        
+        .product-item-features ul {
+            columns: 2;
+            column-gap: 2rem;
+        }
+        
+        .product-item-features li {
+            margin-bottom: 0.3rem;
+            position: relative;
+            padding-left: 12px;
+        }
+        
+        .product-item-features li:before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        
+        .product-item-price {
+            min-width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .product-item-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+        
+        .product-item .view-btn, .product-item .buy-btn {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0;
+            gap: 0.5rem;
+        }
+        
+        .page-btn {
+            padding: 8px 14px;
+            border: 1px solid rgba(0,0,0,0.1);
+            background-color: var(--card-bg);
+            cursor: pointer;
+            border-radius: 8px;
+            transition: var(--transition);
+            min-width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .dark-mode .page-btn {
+            border-color: rgba(255,255,255,0.1);
+        }
+        
+        .page-btn.active {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        
+        .page-btn:hover:not(.active) {
+            background-color: rgba(0,0,0,0.05);
+            border-color: var(--accent);
+        }
+        
+        .dark-mode .page-btn:hover:not(.active) {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .page-btn i {
+            font-size: 0.8rem;
+        }
+        
+        footer {
+            background-color: var(--footer-bg);
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 3rem;
+            transition: var(--transition);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--accent);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .footer-column a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-column a i {
+            width: 18px;
+            text-align: center;
+        }
+        
+        .newsletter {
+            grid-column: span 2;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin-top: 1rem;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px 0 0 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .newsletter-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0 20px;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .newsletter-btn:hover {
+            background-color: var(--accent-dark);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+        
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0,0,0,0.1);
+            border-radius: 50%;
+            border-top-color: var(--accent);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+            grid-column: 1 / -1;
+        }
+        
+        .no-results-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .no-results-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .no-results-desc {
+            max-width: 500px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .try-again-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .try-again-btn:hover {
+            background-color: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* Tooltip styles */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+            font-weight: normal;
+        }
+        
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--dark) transparent transparent transparent;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        /* Pulse animation for new products */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255,153,0,0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(255,153,0,0); }
+            100% { box-shadow: 0 0 0 0 rgba(255,153,0,0); }
+        }
+        
+        .new-product {
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+        
+        .new-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--danger);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            z-index: 3;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 1200px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+            
+            .product-item-image {
+                width: 180px;
+                height: 180px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .product-features ul {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-item-features ul {
+                columns: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .header-actions {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .search-container {
+                width: 100%;
+            }
+            
+            .filters {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .newsletter {
+                grid-column: span 1;
+            }
+            
+            .product-item {
+                flex-direction: column;
+            }
+            
+            .product-item-image {
+                width: 100%;
+                height: 200px;
+            }
+            
+            .product-item-top {
+                flex-direction: column;
+            }
+            
+            .product-item-price {
+                align-items: flex-start;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .filters {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-actions {
+                flex-direction: column;
+            }
+            
+            .view-toggle {
+                display: none;
+            }
+            
+            .pagination {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <i class="fas fa-smartwatch logo-icon"></i>
+                SmartWatch <span>Scout</span>
+            </a>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Breadcrumbs for SEO -->
+        <div class="breadcrumbs">
+            <a href="/">Home</a>
+            <span>/</span>
+            <a href="/smart-watches">Smart Watches</a>
+            <span>/</span>
+            <span>Best Deals</span>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search smart watches..." value="Smart Watches">
+            <button class="search-btn">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+        
+        <div class="filters-section">
+            <div class="filters-header">
+                <h3 class="filters-title">Refine Results</h3>
+                <button class="reset-filters">
+                    <i class="fas fa-undo"></i> Reset All
+                </button>
+            </div>
+            <div class="filters">
+                <div class="filter-group">
+                    <label class="filter-label">Sort by</label>
+                    <select class="filter-select" id="sort-by">
+                        <option value="score">Best Match (70% reviews + 30% price)</option>
+                        <option value="price_asc">Price: Low to High</option>
+                        <option value="price_desc">Price: High to Low</option>
+                        <option value="rating">Customer Reviews</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Price range</label>
+                    <div class="price-slider-container">
+                        <input type="range" min="0" max="50000" value="50000" class="price-slider" id="price-slider">
+                        <div class="price-range-values">
+                            <span>₹0</span>
+                            <span>₹50,000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Brand</label>
+                    <select class="filter-select" id="brand-filter">
+                        <option value="all">All Brands</option>
+                        <option value="noise">Noise</option>
+                        <option value="boat">boAt</option>
+                        <option value="fireboltt">Fire-Boltt</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="apple">Apple</option>
+                        <option value="amazfit">Amazfit</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Rating</label>
+                    <select class="filter-select" id="rating-filter">
+                        <option value="all">All Ratings</option>
+                        <option value="4">4 ★ & above</option>
+                        <option value="3">3 ★ & above</option>
+                        <option value="2">2 ★ & above</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Availability</label>
+                    <select class="filter-select" id="availability-filter">
+                        <option value="all">All</option>
+                        <option value="in_stock">In Stock</option>
+                        <option value="prime">Prime Delivery</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-header">
+            <div class="results-stats">
+                Showing <strong>12</strong> results for "Smart Watches"
+            </div>
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid">
+                    <i class="fas fa-th"></i>
+                </button>
+                <button class="view-btn" data-view="list">
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="product-grid" id="product-view">
+            <!-- Product cards will be dynamically inserted here -->
+            
+            <!-- Example product card (will be generated dynamically in real implementation) -->
+            <div class="product-card new-product">
+                <div class="new-badge" title="New Arrival">NEW</div>
+                <div class="product-badge">In Stock</div>
+                <div class="score-badge" title="Our Score based on 70% reviews and 30% price">
+                    <i class="fas fa-star"></i> 8.7
+                </div>
+                <div class="product-image-container">
+                    <img src="https://m.media-amazon.com/images/I/61m9ZP6b9xL._SL1500_.jpg" alt="Noise ColorFit Pulse Grand Smart Watch" class="product-image">
+                    <button class="product-wishlist" title="Add to wishlist">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Noise ColorFit Pulse Grand Smart Watch with 1.69" HD Display, Bluetooth Calling, Functional Crown, 100+ Watch Faces, Fast Charge, 150+ Sports Modes, Smart DND, 10 Days Battery (Jet Black)</h3>
+                    <div class="product-price">
+                        <span class="current-price">₹1,799</span>
+                        <span class="original-price">₹3,999</span>
+                        <span class="discount-badge">55% off</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="tooltip">
+                                <i class="fas fa-info-circle"></i>
+                                <span class="tooltiptext">Based on 12,345 customer reviews</span>
+                            </span>
+                        </div>
+                        <span class="rating-count">(12,345)</span>
+                    </div>
+                    <div class="product-seller">
+                        Sold by: <strong>Noise Retail</strong> <span class="seller-badge">Amazon Fulfilled</span>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>1.69" HD display with 500 nits brightness</li>
+                            <li>Bluetooth calling with built-in speaker and mic</li>
+                            <li>10 days battery life with fast charging</li>
+                            <li>150+ sports modes and health monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <button class="view-btn">
+                            <i class="far fa-eye"></i> Details
+                        </button>
+                        <button class="buy-btn">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- More products would appear here in the actual implementation -->
+        </div>
+        
+        <div class="pagination">
+            <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn">5</button>
+            <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SmartWatch Scout</h3>
+                    <ul>
+                        <li><a href="/about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="/contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="/privacy"><i class="fas fa-lock"></i> Privacy Policy</a></li>
+                        <li><a href="/terms"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Smart Watch Brands</h3>
+                    <ul>
+                        <li><a href="/brands/noise"><i class="fas fa-check"></i> Noise</a></li>
+                        <li><a href="/brands/boat"><i class="fas fa-check"></i> boAt</a></li>
+                        <li><a href="/brands/fireboltt"><i class="fas fa-check"></i> Fire-Boltt</a></li>
+                        <li><a href="/brands/samsung"><i class="fas fa-check"></i> Samsung</a></li>
+                        <li><a href="/brands/apple"><i class="fas fa-check"></i> Apple</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/buying-guide"><i class="fas fa-book"></i> Buying Guide</a></li>
+                        <li><a href="/comparisons"><i class="fas fa-balance-scale"></i> Watch Comparisons</a></li>
+                        <li><a href="/blog"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="/deals"><i class="fas fa-tag"></i> Daily Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on the best smart watch deals</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 SmartWatch Scout. All rights reserved. 
+                <br>
+                SmartWatch Scout is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.in.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json" class="structured-data">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SmartWatch Scout",
+        "url": "https://smartwatchscout.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://smartwatchscout.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or use preferred color scheme
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            body.classList.add('dark-mode');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+        
+        // View toggle (grid/list)
+        const viewButtons = document.querySelectorAll('[data-view]');
+        const productView = document.getElementById('product-view');
+        
+        viewButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                viewButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                productView.className = `product-${button.dataset.view}`;
+            });
+        });
+        
+        // Price slider
+        const priceSlider = document.getElementById('price-slider');
+        const priceRangeValues = document.querySelector('.price-range-values');
+        
+        priceSlider.addEventListener('input', () => {
+            const maxPrice = parseInt(priceSlider.value);
+            priceRangeValues.innerHTML = `<span>₹0</span><span>₹${maxPrice.toLocaleString('en-IN')}</span>`;
+            applyFilters();
+        });
+        
+        // Filter functionality
+        function applyFilters() {
+            // Show loading state
+            productView.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            `;
+            
+            // Simulate API delay
+            setTimeout(loadProducts, 1000);
+        }
+        
+        // Initialize filters
+        document.getElementById('sort-by').addEventListener('change', applyFilters);
+        document.getElementById('brand-filter').addEventListener('change', applyFilters);
+        document.getElementById('rating-filter').addEventListener('change', applyFilters);
+        document.getElementById('availability-filter').addEventListener('change', applyFilters);
+        document.querySelector('.reset-filters').addEventListener('click', resetFilters);
+        
+        function resetFilters() {
+            document.getElementById('sort-by').value = 'score';
+            document.getElementById('price-slider').value = 50000;
+            document.getElementById('brand-filter').value = 'all';
+            document.getElementById('rating-filter').value = 'all';
+            document.getElementById('availability-filter').value = 'all';
+            
+            priceRangeValues.innerHTML = '<span>₹0</span><span>₹50,000</span>';
+            applyFilters();
+        }
+        
+        // Wishlist functionality
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.product-wishlist')) {
+                const wishlistBtn = e.target.closest('.product-wishlist');
+                const icon = wishlistBtn.querySelector('i');
+                
+                wishlistBtn.classList.toggle('active');
+                if (wishlistBtn.classList.contains('active')) {
+                    icon.classList.replace('far', 'fas');
+                    wishlistBtn.title = "Remove from wishlist";
+                    // Show toast notification
+                    showToast('Added to wishlist');
+                } else {
+                    icon.classList.replace('fas', 'far');
+                    wishlistBtn.title = "Add to wishlist";
+                }
+            }
+            
+            // Handle buy now buttons
+            if (e.target.closest('.buy-btn')) {
+                const productCard = e.target.closest('.product-card, .product-item');
+                const productTitle = productCard.querySelector('.product-title').textContent;
+                const affiliateUrl = `https://www.amazon.in/dp/B0D632MTK3/?tag=dealdost03-21&linkCode=ml1`;
+                window.open(affiliateUrl, '_blank');
+                
+                // Track conversion (in a real implementation)
+                trackConversion(productTitle);
+            }
+        });
+        
+        function trackConversion(productTitle) {
+            console.log('Conversion tracked for:', productTitle);
+            // In a real implementation, you would send this data to your analytics platform
+        }
+        
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast-notification';
+            toast.textContent = message;
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: var(--success);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 1000;
+                animation: fadeIn 0.3s ease-out;
+            `;
+            
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.animation = 'fadeOut 0.3s ease-out';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+        
+        // Load initial products
+        document.addEventListener('DOMContentLoaded', loadProducts);
+        
+        function loadProducts() {
+            // In a real implementation, this would fetch products from your backend API
+            // For this demo, we'll generate some sample products
+            
+            const currentView = document.querySelector('.view-btn.active').dataset.view;
+            const productHTML = currentView === 'grid' ? generateGridProducts() : generateListProducts();
+            
+            productView.innerHTML = productHTML;
+            
+            // Add event listeners to new elements
+            document.querySelectorAll('.product-wishlist').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const icon = this.querySelector('i');
+                    if (this.classList.contains('active')) {
+                        icon.classList.replace('far', 'fas');
+                        this.title = "Remove from wishlist";
+                        showToast('Added to wishlist');
+                    } else {
+                        icon.classList.replace('fas', 'far');
+                        this.title = "Add to wishlist";
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.buy-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const productCard = this.closest('.product-card, .product-item');
+                    const productTitle = productCard.querySelector('.product-title').textContent;
+                    const affiliateUrl = `https://www.amazon.in/dp/B0D632MTK3/?tag=dealdost03-21&linkCode=ml1`;
+                    window.open(affiliateUrl, '_blank');
+                    trackConversion(productTitle);
+                });
+            });
+        }
+        
+        function generateGridProducts() {
+            const products = [
+                {
+                    title: "Noise ColorFit Pulse Grand Smart Watch with 1.69\" HD Display, Bluetooth Calling, Functional Crown, 100+ Watch Faces, Fast Charge, 150+ Sports Modes, Smart DND, 10 Days Battery (Jet Black)",
+                    price: 1799,
+                    originalPrice: 3999,
+                    rating: 4.5,
+                    ratingCount: 12345,
+                    seller: "Noise Retail",
+                    features: [
+                        "1.69\" HD display with 500 nits brightness",
+                        "Bluetooth calling with built-in speaker and mic",
+                        "10 days battery life with fast charging",
+                        "150+ sports modes and health monitoring"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/61m9ZP6b9xL._SL1500_.jpg",
+                    score: 8.7,
+                    isNew: true,
+                    inStock: true
+                },
+                {
+                    title: "Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.39\" Display, 120+ Sports Modes, 240*240 Pixel Resolution, SpO2, Heart Rate Monitoring, IP67, 7 Days Battery (Black)",
+                    price: 1299,
+                    originalPrice: 4999,
+                    rating: 4.2,
+                    ratingCount: 8765,
+                    seller: "Fire-Boltt",
+                    features: [
+                        "Bluetooth calling with noise cancellation",
+                        "1.39\" round display",
+                        "7 days battery life",
+                        "120+ sports modes"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/61gIq8jqZVL._SL1500_.jpg",
+                    score: 7.9,
+                    isNew: false,
+                    inStock: true
+                },
+                {
+                    title: "boAt Wave Call Smart Watch with Advanced BT Calling, 1.69\" HD Display, 550NITS Brightness, 150+ Watch Faces, 7 Days Battery, 10+ Sports Modes, IP68, Heart & SpO2 Monitoring(Moonlight Black)",
+                    price: 1499,
+                    originalPrice: 2999,
+                    rating: 4.3,
+                    ratingCount: 9876,
+                    seller: "boAt",
+                    features: [
+                        "1.69\" square display",
+                        "Bluetooth calling with dial pad",
+                        "7 days battery life",
+                        "IP68 water resistant"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/61W9MuZf3VL._SL1500_.jpg",
+                    score: 8.1,
+                    isNew: true,
+                    inStock: true
+                },
+                {
+                    title: "Samsung Galaxy Watch4 Bluetooth (4.0 cm, Black, Compatible with Android only)",
+                    price: 9999,
+                    originalPrice: 15999,
+                    rating: 4.1,
+                    ratingCount: 4567,
+                    seller: "Samsung India",
+                    features: [
+                        "1.2\" Super AMOLED display",
+                        "BioActive Sensor (ECG, BIA)",
+                        "5ATM water resistance",
+                        "Wear OS powered by Samsung"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/61G9iS6VmkL._SL1500_.jpg",
+                    score: 7.5,
+                    isNew: false,
+                    inStock: true
+                },
+                {
+                    title: "Amazfit Bip U Pro Smart Watch with Alexa Built-In, GPS, Blood Oxygen, Heart Rate, Sleep & Stress Monitoring, 60+ Sports Modes, 5ATM Waterproof, 9-Day Battery Life (Black)",
+                    price: 4499,
+                    originalPrice: 5999,
+                    rating: 4.0,
+                    ratingCount: 3456,
+                    seller: "Amazfit",
+                    features: [
+                        "1.43\" color always-on display",
+                        "Built-in GPS and Alexa",
+                        "SpO2 and stress monitoring",
+                        "9 days battery life"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/61j7Q1yQqVL._SL1500_.jpg",
+                    score: 7.2,
+                    isNew: false,
+                    inStock: false
+                },
+                {
+                    title: "Apple Watch SE (2nd Gen) [GPS 40 mm] Smart Watch with Midnight Aluminium Case & Midnight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor",
+                    price: 24900,
+                    originalPrice: 29900,
+                    rating: 4.6,
+                    ratingCount: 7654,
+                    seller: "Appario Retail",
+                    features: [
+                        "Retina OLED display",
+                        "Crash detection and emergency SOS",
+                        "Fitness and health tracking",
+                        "iOS compatibility"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/71n7zFSE6QL._SL1500_.jpg",
+                    score: 8.9,
+                    isNew: false,
+                    inStock: true
+                }
+            ];
+            
+            return products.map(product => `
+                <div class="product-card ${product.isNew ? 'new-product' : ''}">
+                    ${product.isNew ? '<div class="new-badge" title="New Arrival">NEW</div>' : ''}
+                    <div class="product-badge ${product.inStock ? '' : 'out-of-stock'}">
+                        ${product.inStock ? 'In Stock' : 'Out of Stock'}
+                    </div>
+                    <div class="score-badge" title="Our Score based on 70% reviews and 30% price">
+                        <i class="fas fa-star"></i> ${product.score}
+                    </div>
+                    <div class="product-image-container">
+                        <img src="${product.image}" alt="${product.title.substring(0, 50)}" class="product-image">
+                        <button class="product-wishlist" title="Add to wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">${product.title}</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹${product.price.toLocaleString('en-IN')}</span>
+                            <span class="original-price">₹${product.originalPrice.toLocaleString('en-IN')}</span>
+                            <span class="discount-badge">${Math.round(((product.originalPrice - product.price) / product.originalPrice * 100)}% off</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                ${generateStars(product.rating)}
+                                <span class="tooltip">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="tooltiptext">Based on ${product.ratingCount.toLocaleString('en-IN')} customer reviews</span>
+                                </span>
+                            </div>
+                            <span class="rating-count">(${product.ratingCount.toLocaleString('en-IN')})</span>
+                        </div>
+                        <div class="product-seller">
+                            Sold by: <strong>${product.seller}</strong> <span class="seller-badge">Amazon Fulfilled</span>
+                        </div>
+                        <div class="product-features">
+                            <ul>
+                                ${product.features.map(feature => `<li>${feature}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="product-actions">
+                            <button class="view-btn">
+                                <i class="far fa-eye"></i> Details
+                            </button>
+                            <button class="buy-btn" ${product.inStock ? '' : 'disabled'}>
+                                <i class="fas fa-shopping-cart"></i> ${product.inStock ? 'Buy Now' : 'Out of Stock'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function generateListProducts() {
+            const products = [
+                {
+                    title: "Noise ColorFit Pulse Grand Smart Watch with 1.69\" HD Display, Bluetooth Calling, Functional Crown, 100+ Watch Faces, Fast Charge, 150+ Sports Modes, Smart DND, 10 Days Battery (Jet Black)",
+                    price: 1799,
+                    originalPrice: 3999,
+                    rating: 4.5,
+                    ratingCount: 12345,
+                    seller: "Noise Retail",
+                    features: [
+                        "1.69\" HD display with 500 nits brightness",
+                        "Bluetooth calling with built-in speaker and mic",
+                        "10 days battery life with fast charging",
+                        "150+ sports modes and health monitoring",
+                        "100+ watch faces",
+                        "Smart DND mode"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/61m9ZP6b9xL._SL1500_.jpg",
+                    score: 8.7,
+                    isNew: true,
+                    inStock: true
+                },
+                {
+                    title: "Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.39\" Display, 120+ Sports Modes, 240*240 Pixel Resolution, SpO2, Heart Rate Monitoring, IP67, 7 Days Battery (Black)",
+                    price: 1299,
+                    originalPrice: 4999,
+                    rating: 4.2,
+                    ratingCount: 8765,
+                    seller: "Fire-Boltt",
+                    features: [
+                        "Bluetooth calling with noise cancellation",
+                        "1.39\" round display",
+                        "7 days battery life",
+                        "120+ sports modes",
+                        "SpO2 monitoring",
+                        "Heart rate tracking"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/61gIq8jqZVL._SL1500_.jpg",
+                    score: 7.9,
+                    isNew: false,
+                    inStock: true
+                },
+                {
+                    title: "Apple Watch SE (2nd Gen) [GPS 40 mm] Smart Watch with Midnight Aluminium Case & Midnight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor",
+                    price: 24900,
+                    originalPrice: 29900,
+                    rating: 4.6,
+                    ratingCount: 7654,
+                    seller: "Appario Retail",
+                    features: [
+                        "Retina OLED display",
+                        "Crash detection and emergency SOS",
+                        "Fitness and health tracking",
+                        "iOS compatibility",
+                        "Swimproof design",
+                        "Family Setup"
+                    ],
+                    image: "https://m.media-amazon.com/images/I/71n7zFSE6QL._SL1500_.jpg",
+                    score: 8.9,
+                    isNew: false,
+                    inStock: true
+                }
+            ];
+            
+            return products.map(product => `
+                <div class="product-item ${product.isNew ? 'new-product' : ''}">
+                    ${product.isNew ? '<div class="new-badge" title="New Arrival">NEW</div>' : ''}
+                    <div class="product-badge ${product.inStock ? '' : 'out-of-stock'}">
+                        ${product.inStock ? 'In Stock' : 'Out of Stock'}
+                    </div>
+                    <div class="product-item-image">
+                        <img src="${product.image}" alt="${product.title.substring(0, 50)}">
+                        <button class="product-wishlist" title="Add to wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-item-details">
+                        <div class="product-item-top">
+                            <div class="product-item-info">
+                                <h3 class="product-item-title">${product.title}</h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        ${generateStars(product.rating)}
+                                        <span class="tooltip">
+                                            <i class="fas fa-info-circle"></i>
+                                            <span class="tooltiptext">Based on ${product.ratingCount.toLocaleString('en-IN')} customer reviews</span>
+                                        </span>
+                                    </div>
+                                    <span class="rating-count">(${product.ratingCount.toLocaleString('en-IN')})</span>
+                                </div>
+                                <div class="product-item-features">
+                                    <ul>
+                                        ${product.features.map(feature => `<li>${feature}</li>`).join('')}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-item-price">
+                                <div class="score-badge" title="Our Score based on 70% reviews and 30% price">
+                                    <i class="fas fa-star"></i> ${product.score}
+                                </div>
+                                <div class="product-price" style="margin-top: 10px;">
+                                    <span class="current-price">₹${product.price.toLocaleString('en-IN')}</span>
+                                    <span class="original-price">₹${product.originalPrice.toLocaleString('en-IN')}</span>
+                                    <span class="discount-badge">${Math.round(((product.originalPrice - product.price) / product.originalPrice * 100)}% off</span>
+                                </div>
+                                <div class="product-seller" style="margin-top: 10px;">
+                                    Sold by: <strong>${product.seller}</strong> <span class="seller-badge">Amazon Fulfilled</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item-actions">
+                            <button class="view-btn">
+                                <i class="far fa-eye"></i> Details
+                            </button>
+                            <button class="buy-btn" ${product.inStock ? '' : 'disabled'}>
+                                <i class="fas fa-shopping-cart"></i> ${product.inStock ? 'Buy Now' : 'Out of Stock'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function generateStars(rating) {
+            let stars = '';
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 >= 0.5;
+            
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<i class="fas fa-star"></i>';
+            }
+            
+            if (hasHalfStar) {
+                stars += '<i class="fas fa-star-half-alt"></i>';
+            }
+            
+            const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<i class="far fa-star"></i>';
+            }
+            
+            return stars;
+        }
+    </script>
+</body>
+</html>
